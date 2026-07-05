@@ -2171,7 +2171,7 @@
 
     .qibla-page {
       min-height: calc(100dvh - 126px);
-      padding: 4px 0 18px;
+      padding: 24px 0 18px;
       color: #082118;
       background:
         radial-gradient(circle at 50% 0%, rgba(255,255,255,.96), rgba(251,250,246,.52) 46%, transparent 70%),
@@ -2236,7 +2236,7 @@
     .qibla-hero {
       margin: 0;
       min-height: 0;
-      padding: 8px 0 18px;
+      padding: 0 0 18px;
       display: grid;
       place-items: center;
       overflow: visible;
@@ -2726,11 +2726,6 @@
         </div>
 
         <div class="page qibla-page" data-page="Qibla">
-          <div class="qibla-topbar">
-            <button class="qibla-circle-button" type="button" aria-label="Compass"><i data-lucide="navigation"></i></button>
-            <h2>Qiblah Finder</h2>
-            <button class="qibla-circle-button" type="button" aria-label="Information"><i data-lucide="info"></i></button>
-          </div>
           <article class="card qibla-hero">
             <div class="qibla-heading">
               <p class="caption">Qibla Compass</p>
@@ -2773,10 +2768,6 @@
               <span>km away</span>
             </div>
           </div>
-          <button class="qibla-calibrate" type="button" data-qibla-location aria-label="Calibrate compass">
-            <span><i data-lucide="crosshair"></i></span>
-            <strong>Calibrate</strong>
-          </button>
           <article class="card qibla-simple-card">
             <div class="qibla-manual">
               <label for="qiblaManualHeading"><span>Preview heading</span><strong id="qiblaManualValue">0&deg;</strong></label>
