@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icmnc.org/schemas/mobile-content-v1.json",
+  "title": "ICM Mobile Content",
+  "type": "object",
+  "required": ["schemaVersion"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "site": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 120 },
+        "shortName": { "type": "string", "maxLength": 30 },
+        "tagline": { "type": "string", "maxLength": 240 },
+        "address": { "type": "string", "maxLength": 240 },
+        "email": { "type": "string", "format": "email" },
+        "websiteUrl": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": true
+    },
+    "donation": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 160 },
+        "description": { "type": "string", "maxLength": 400 },
+        "buttonLabel": { "type": "string", "maxLength": 80 },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": true
+    },
+    "news": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "properties": {
+          "id": { "type": ["string", "number"] },
+          "title": { "type": "string", "maxLength": 160 },
+          "date": { "type": "string" },
+          "summary": { "type": "string", "maxLength": 500 },
+          "category": { "type": "string", "maxLength": 40 },
+          "image": { "type": "string" },
+          "imageAlt": { "type": "string", "maxLength": 180 },
+          "imageWidth": { "type": "number", "exclusiveMinimum": 0 },
+          "imageHeight": { "type": "number", "exclusiveMinimum": 0 },
+          "imageFit": { "enum": ["cover", "contain"] },
+          "imageFocalX": { "type": "number", "minimum": 0, "maximum": 100 },
+          "imageFocalY": { "type": "number", "minimum": 0, "maximum": 100 },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "jummah": {
+      "type": "object",
+      "properties": {
+        "shifts": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "required": ["time"],
+            "properties": {
+              "id": { "type": ["string", "number"] },
+              "shift": { "type": "string", "maxLength": 60 },
+              "time": { "type": "string", "maxLength": 30 },
+              "speaker": { "type": "string", "maxLength": 140 },
+              "topic": { "type": "string", "maxLength": 220 },
+              "location": { "type": "string", "maxLength": 180 }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "prayerTimes": {
+      "type": "object",
+      "properties": {
+        "ajaxUrl": { "type": "string", "format": "uri" },
+        "months": { "type": "object" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

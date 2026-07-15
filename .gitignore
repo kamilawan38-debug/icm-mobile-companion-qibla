@@ -1,2 +1,5 @@
 work/
 outputs/icm-mobile-app-check.png
+outputs/*.png
+outputs/*.log
+expo-app/dist*/

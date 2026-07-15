@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "news": [
+    {
+      "id": "wide-banner",
+      "title": "Extra-Wide Banner",
+      "date": "2026-07-10",
+      "summary": "A 4.15:1 banner must remain readable without stretching.",
+      "category": "Extremely Long Category Name That Must Truncate Safely",
+      "image": "https://www.icmnc.org/wp-content/uploads/2022/11/ICMOpenHouse2022-SimplifiedBanner.png",
+      "imageAlt": "ICM open house banner",
+      "imageWidth": 465,
+      "imageHeight": 112,
+      "imageFit": "contain"
+    },
+    {
+      "id": "portrait-poster",
+      "title": "Portrait Poster",
+      "date": "2026-07-11",
+      "summary": "A tall flyer must fit inside a bounded card without losing text.",
+      "category": "Education",
+      "image": "https://www.icmnc.org/wp-content/uploads/2022/08/ICM-Hifdh-Open-House.png",
+      "imageAlt": "Portrait ICM open house poster",
+      "imageWidth": 1428,
+      "imageHeight": 2000,
+      "imageFit": "contain"
+    },
+    {
+      "id": "square-poster",
+      "title": "Square Poster",
+      "date": "2026-07-12",
+      "category": "Events",
+      "image": "https://www.icmnc.org/wp-content/uploads/2022/08/UIF-Seminar-Aug-21-Haroon-Iqbal-Social-Media-Post.jpg",
+      "imageAlt": "Square event poster",
+      "imageWidth": 809,
+      "imageHeight": 809,
+      "imageFit": "contain"
+    },
+    {
+      "id": "broken-image",
+      "title": "Broken Remote Image",
+      "date": "not-a-date",
+      "summary": "The bundled announcement artwork must replace a failed image request.",
+      "category": "Community",
+      "image": "https://www.icmnc.org/this-image-does-not-exist.jpg",
+      "imageAlt": "Unavailable announcement artwork"
+    },
+    {
+      "id": "missing-image",
+      "title": "Announcement Without an Image",
+      "date": "",
+      "summary": "Missing artwork and dates must produce intentional fallbacks."
+    },
+    {
+      "id": "unsafe-links",
+      "title": "Unsafe URLs Are Rejected",
+      "summary": "JavaScript links and non-image data URLs must never reach the interface.",
+      "category": "Security",
+      "image": "javascript:alert('blocked')",
+      "url": "javascript:alert('blocked')"
+    },
+    {
+      "id": "draft-hidden",
+      "status": "draft",
+      "title": "This Draft Must Not Render",
+      "summary": "Draft CMS entries are filtered before display."
+    },
+    {
+      "id": "wide-banner",
+      "title": "Extra-Wide Banner",
+      "date": "2026-07-10",
+      "summary": "Duplicate IDs are filtered.",
+      "category": "Duplicate"
+    }
+  ],
+  "jummah": {
+    "shifts": [
+      {
+        "shift": "Early Service",
+        "time": "12:30 PM",
+        "speaker": "To be announced",
+        "topic": "To be announced"
+      },
+      {
+        "shift": "2",
+        "time": "1:30 PM",
+        "speaker": "A speaker name that remains readable when the CMS provides a longer value",
+        "topic": "A longer khutbah topic that checks wrapping across compact devices and larger accessibility text settings"
+      },
+      {
+        "shift": "Incomplete shift is filtered",
+        "time": ""
+      }
+    ]
+  }
+}

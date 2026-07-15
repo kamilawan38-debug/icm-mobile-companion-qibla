@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "name": "Islamic Center of Morrisville",
+    "shortName": "ICM",
+    "tagline": "Serving Morrisville, West Cary, and RTP.",
+    "address": "107-B Quail Fields Ct, Morrisville, NC 27560",
+    "email": "contact@icmnc.org",
+    "websiteUrl": "https://www.icmnc.org/"
+  },
+  "donation": {
+    "title": "Support ICM",
+    "description": "Give securely through the official ICM donation page.",
+    "buttonLabel": "Donate securely",
+    "url": "https://www.icmnc.org/donate/"
+  },
+  "news": [
+    {
+      "id": "friday-announcements-2026-07-10",
+      "title": "This Week at ICM",
+      "date": "2026-07-10",
+      "summary": "Four Jummah shifts and this week’s community announcements from ICM.",
+      "category": "Community Update",
+      "image": "https://www.icmnc.org/wp-content/uploads/2026/07/July10-2026-FridayAnnouncements-website.png",
+      "imageAlt": "ICM Friday announcements for July 10, 2026",
+      "imageWidth": 1920,
+      "imageHeight": 1080,
+      "imageFit": "contain",
+      "url": "https://www.icmnc.org/"
+    },
+    {
+      "id": "portrait-poster-example",
+      "title": "Full-Time Hifdh School Open House",
+      "date": "2022-08-12",
+      "summary": "A portrait-poster example showing how the app preserves text-heavy artwork.",
+      "category": "Education",
+      "image": "https://www.icmnc.org/wp-content/uploads/2022/08/ICM-Hifdh-Open-House.png",
+      "imageAlt": "ICM Full-Time Hifdh School open house poster",
+      "imageWidth": 1428,
+      "imageHeight": 2000,
+      "imageFit": "contain",
+      "url": "https://www.icmnc.org/open-house-for-icm-full-time-hifdh-school/"
+    },
+    {
+      "id": "square-poster-example",
+      "title": "Home Buying and Islamic Financing",
+      "date": "2022-08-12",
+      "summary": "A square-image example for CMS editors and visual regression testing.",
+      "category": "Seminar",
+      "image": "https://www.icmnc.org/wp-content/uploads/2022/08/UIF-Seminar-Aug-21-Haroon-Iqbal-Social-Media-Post.jpg",
+      "imageAlt": "Home buying and Islamic financing seminar announcement",
+      "imageWidth": 809,
+      "imageHeight": 809,
+      "imageFit": "contain",
+      "url": "https://www.icmnc.org/home-buying-and-islamic-financing/"
+    },
+    {
+      "id": "no-image-example",
+      "title": "Community Update Without Artwork",
+      "date": "",
+      "summary": "The image field is intentionally omitted so clients can verify their bundled fallback artwork.",
+      "category": "Community",
+      "imageAlt": "ICM community announcement"
+    }
+  ],
+  "jummah": {
+    "shifts": [
+      {
+        "id": "jummah-1",
+        "shift": "1st Shift",
+        "time": "1:00 PM",
+        "speaker": "Ammar Akhtar",
+        "topic": "Tasting the Sweetness of Salah",
+        "location": "ICM Multipurpose Hall"
+      },
+      {
+        "id": "jummah-2",
+        "shift": "2nd Shift",
+        "time": "2:00 PM",
+        "speaker": "Imam Sami Koçak",
+        "topic": "Shaytaan: Humanity’s Eternal Enemy and His Traps",
+        "location": "ICM Multipurpose Hall"
+      },
+      {
+        "id": "jummah-3",
+        "shift": "3rd Shift",
+        "time": "3:00 PM",
+        "speaker": "Imam Manzar ul Islam",
+        "topic": "The Devil's Playbook: How Shayṭān Traps the Modern Muslim",
+        "location": "ICM Multipurpose Hall"
+      },
+      {
+        "id": "jummah-4",
+        "shift": "4th Shift",
+        "time": "4:00 PM",
+        "speaker": "Abid Ansari",
+        "topic": "Protecting Your Heart in the Age of Social Media",
+        "location": "ICM Multipurpose Hall"
+      }
+    ]
+  },
+  "prayerTimes": {
+    "ajaxUrl": "https://www.icmnc.org/wp-admin/admin-ajax.php"
+  }
+}
