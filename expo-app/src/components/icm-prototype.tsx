@@ -22,8 +22,6 @@ const fallbackTimetableUrl = assetUrl(require('@/assets/prototype/assets/content
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const fallbackContentUrl = assetUrl(require('@/assets/prototype/assets/content/fallback-content.txt'));
 const kaabaUrl = assetUrl(require('@/assets/prototype/assets/kaaba-compass-centered.png'));
-const donateIconUrl = assetUrl(require('@/assets/prototype/assets/donate-hands-sprout.png'));
-const newsIconUrl = assetUrl(require('@/assets/prototype/assets/news-megaphone.png'));
 const ramadanUrl = assetUrl(require('@/assets/prototype/assets/news/ramadan.png'));
 const eidUrl = assetUrl(require('@/assets/prototype/assets/news/eid.png'));
 const campUrl = assetUrl(require('@/assets/prototype/assets/news/camp.png'));
@@ -111,8 +109,6 @@ function injectNativeShell(
 
   return html
     .replaceAll('assets/kaaba-compass-centered.png', kaabaUrl)
-    .replaceAll('assets/donate-hands-sprout.png', donateIconUrl)
-    .replaceAll('assets/news-megaphone.png', newsIconUrl)
     .replaceAll('assets/news/ramadan.png', ramadanUrl)
     .replaceAll('assets/news/eid.png', eidUrl)
     .replaceAll('assets/news/camp.png', campUrl)

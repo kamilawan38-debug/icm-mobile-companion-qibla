@@ -407,26 +407,6 @@
       object-fit: contain;
     }
 
-    .donate-mark {
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: currentColor;
-      -webkit-mask: url("assets/donate-hands-sprout.png") center / contain no-repeat;
-      mask: url("assets/donate-hands-sprout.png") center / contain no-repeat;
-      filter: drop-shadow(.35px 0 currentColor) drop-shadow(-.35px 0 currentColor) drop-shadow(0 .35px currentColor) drop-shadow(0 -.35px currentColor);
-    }
-
-    .news-mark {
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: currentColor;
-      -webkit-mask: url("assets/news-megaphone.png") center / contain no-repeat;
-      mask: url("assets/news-megaphone.png") center / contain no-repeat;
-      filter: drop-shadow(.35px 0 currentColor) drop-shadow(-.35px 0 currentColor) drop-shadow(0 .35px currentColor) drop-shadow(0 -.35px currentColor);
-    }
-
     .site-icon svg * {
       stroke: currentColor;
     }
@@ -3848,6 +3828,10 @@
       stroke-width: 3.4 !important;
     }
 
+    .tab > .site-icon[data-site-icon="donate"] svg {
+      stroke-width: 1.3 !important;
+    }
+
     .tab > svg[data-lucide] {
       stroke-width: 1.3 !important;
     }
@@ -4039,8 +4023,8 @@
 
       <nav class="tabbar" aria-label="Primary navigation">
         <button class="tab active" data-tab="Prayer"><span class="site-icon" data-site-icon="jummah" aria-hidden="true"></span><span>Prayer</span></button>
-        <button class="tab" data-tab="News"><span class="site-icon" data-site-icon="megaphone" aria-hidden="true"></span><span>News</span></button>
-        <button class="tab" data-tab="Qibla"><i data-lucide="navigation"></i><span>Qibla</span></button>
+        <button class="tab" data-tab="News"><span class="site-icon" data-site-icon="news" aria-hidden="true"></span><span>News</span></button>
+        <button class="tab" data-tab="Qibla"><i data-lucide="compass"></i><span>Qibla</span></button>
         <button class="tab" data-tab="Donate"><span class="site-icon" data-site-icon="donate" aria-hidden="true"></span><span>Donate</span></button>
         <button class="tab" data-tab="Settings"><i data-lucide="settings"></i><span>Settings</span></button>
       </nav>
@@ -4615,8 +4599,8 @@
       clock: `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="22"/><path d="M32 18v16l11 7"/></svg>`,
       calendar: `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="40" height="38" rx="4"/><path d="M20 10v9"/><path d="M44 10v9"/><path d="M12 25h40"/><path d="M22 34h6"/><path d="M36 34h6"/><path d="M22 43h6"/><path d="M36 43h6"/></svg>`,
       jummah: `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="17" r="6"/><circle cx="17" cy="23" r="5"/><circle cx="47" cy="23" r="5"/><path d="M22 45c1-8 5-13 10-13s9 5 10 13"/><path d="M8 45c1-7 5-11 10-12"/><path d="M56 45c-1-7-5-11-10-12"/><path d="M20 55h24"/></svg>`,
-      megaphone: `<span class="news-mark" aria-hidden="true"></span>`,
-      donate: `<span class="donate-mark" aria-hidden="true"></span>`
+      news: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7h28v31a6 6 0 0 1-6 6H13a5 5 0 0 1-5-5V7Z"/><path d="M36 14h5v24a6 6 0 0 1-6 6"/><path d="M14 14h9v9h-9Z"/><path d="M28 15h3M28 21h3M14 30h17M14 36h17"/></svg>`,
+      donate: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95"/><path d="m2 15 6 6"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91"/></svg>`
       };
 
     function iconSvg(name) {
