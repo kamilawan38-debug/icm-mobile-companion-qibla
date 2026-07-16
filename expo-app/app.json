@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "icmmobile",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
